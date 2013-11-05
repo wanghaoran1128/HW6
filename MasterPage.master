@@ -13,8 +13,7 @@
     <form id="form1" runat="server">
     <div id="nav">
 
-        <asp:Menu ID="Menu1" runat="server" 
-            DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" Orientation="Horizontal" RenderingMode="Table" StaticSubMenuIndent="10px">
+        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" Orientation="Horizontal" RenderingMode="Table" StaticSubMenuIndent="10px">
         <StaticMenuItemStyle CssClass="Staticmenu" />
         <DynamicHoverStyle CssClass="DynamicHoverStyler" />
         <DynamicMenuItemStyle CssClass="DynamicMenuItemStyle" />
