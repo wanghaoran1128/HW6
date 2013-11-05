@@ -1,0 +1,21 @@
+﻿body { background-color:lightblue;}
+
+#nav {background-color:gray;}
+
+.StaticMenu{ font-family: "Comic Sans MS"; color:#7c6f57; background-color:#f7f6f3 !important;}
+.StaticMenu a, a:visited {color: #7c6f57;}
+
+.DynamicHoverStyle {background-color:#7c6f57; color:white !important; }
+.StaticHoverStyle {background-color:#7c6f57; color:white !important; }
+
+.DynamicMenuItemStyle {padding:5px; }
+.StaticMenuItemStyle {padding:5px; }
+
+.DynamicMenuStyle {font-family:"Comic Sans MS"; background-color:#f7f6f3 !important; }
+.DynamicMenuStyle a, a:hover {color:#7c6f57;}
+
+.StaticMenuStyle {background-color:#5d7b9d; }
+.StaticMenuStyle a, a:hover {color:#7c6f57;}
+
+.DynamicSelectedStyle {background-color:#f7f6f3; color:#7c6f57;}
+.StaticSelectedStyle {background-color:#f7f6f3; color:#7c6f57;}
