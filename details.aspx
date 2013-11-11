@@ -10,11 +10,11 @@
         <InsertParameters>
             <asp:Parameter Name="FirstName" Type="String" />
             <asp:Parameter Name="LastName" Type="String" />
-            <asp:Parameter Name="Age" Type="Int32" />
+            <asp:Parameter Name="Age" Type="String" />
             <asp:Parameter Name="Country" Type="String" />
             <asp:Parameter Name="Height" Type="String" />
             <asp:Parameter Name="Weight" Type="String" />
-            <asp:Parameter Name="Number" Type="Int32" />
+            <asp:Parameter Name="Number" Type="String" />
             <asp:Parameter Name="Position" Type="String" />
             <asp:Parameter Name="Marriage" Type="String" />
             <asp:Parameter Name="Education" Type="String" />
@@ -27,11 +27,11 @@
         <UpdateParameters>
             <asp:Parameter Name="FirstName" Type="String" />
             <asp:Parameter Name="LastName" Type="String" />
-            <asp:Parameter Name="Age" Type="Int32" />
+            <asp:Parameter Name="Age" Type="String" />
             <asp:Parameter Name="Country" Type="String" />
             <asp:Parameter Name="Height" Type="String" />
             <asp:Parameter Name="Weight" Type="String" />
-            <asp:Parameter Name="Number" Type="Int32" />
+            <asp:Parameter Name="Number" Type="String" />
             <asp:Parameter Name="Position" Type="String" />
             <asp:Parameter Name="Marriage" Type="String" />
             <asp:Parameter Name="Education" Type="String" />
@@ -40,7 +40,21 @@
             <asp:Parameter Name="Id" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
-    <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" Height="90px" Width="213px">
+    <div id="details3">
+    <asp:DataList ID="DataList2" runat="server" DataKeyField="Id" DataSourceID="SqlDataSource1">
+        <ItemTemplate>
+             <asp:image ID="Picture" runat="server" ImageURL='<%# Eval("Picture", "~/bayern/{0}")%>' />
+        </ItemTemplate>
+    </asp:DataList>
+    </div> 
+    <div id="details">
+    <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" CssClass="cssdetailsview"
+            HeaderStyle-CssClass="header"
+            FieldHeaderStyle-CssClass="firldheader"
+            ItemStyle-CssClass="item"
+            AlternatingRowStyle-CssClass="altrow"
+            CommandRowStyle-CssClass="command"
+            pagerStyle-CssClass="pager" Height="90px" Width="213px">
         <Fields>
             <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
             <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
@@ -57,12 +71,9 @@
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
         </Fields>
     </asp:DetailsView>
+    </div>
     <asp:Label ID="Label1" runat="server"></asp:Label>
     <br />
-    <asp:DataList ID="DataList2" runat="server" DataKeyField="Id" DataSourceID="SqlDataSource1">
-        <ItemTemplate>
-             <asp:image ID="Picture" runat="server" ImageURL='<%# Eval("Picture", "~/bayern/{0}")%>' />
-        </ItemTemplate>
-    </asp:DataList>
+
     </asp:Content>
 

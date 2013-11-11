@@ -1,6 +1,24 @@
-﻿body { background-color:lightblue;}
+﻿body {
+	background-image: url('./bayern/b.jpg');
+    color: black;
+	font-family: Gill Sans, Verdana, Helvetica, sans-serif;
+	font-size: 12pt;
+	margin: 100px 100px 100px 100px;
+    background-repeat:repeat-y;
+}
 
-#nav {background-color:gray;}
+h1.title {
+	text-align:center;
+	font-family: Gill Sans, Verdana, Helvetica, sans-serif;
+	font-size: 20pt;
+}
+
+p{
+	text-align:left;
+	font-family: Gill Sans, Verdana, Helvetica, sans-serif;
+	font-size: 16pt;
+    margin: 0px 100px 0px 100px;
+}
 
 .StaticMenu{ font-family: "Comic Sans MS"; color:#7c6f57; background-color:#f7f6f3 !important;}
 .StaticMenu a, a:visited {color: #7c6f57;}
@@ -19,3 +37,136 @@
 
 .DynamicSelectedStyle {background-color:#f7f6f3; color:#7c6f57;}
 .StaticSelectedStyle {background-color:#f7f6f3; color:#7c6f57;}
+
+#nav {
+	text-align:center;
+    list-style: none;
+    padding: 0;
+    margin: 0px 200px 0px 200px;
+    background-color:lightblue;
+}
+
+#nav li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li:before {
+    content: "| ";
+}
+
+#nav li:first-child:before {content: "";
+}
+
+* html #nav li {
+    border-left: 1px solid black;
+}
+
+* html #nav li {
+    display:block; float:left;
+}
+
+* html #nav li:first-child child {
+    border-left: 0;
+}
+
+#container {
+    background: white;padding:20px;width:930px;margin: 0 auto;border:solid 2px black;
+}
+
+#details {
+   margin: 0 300px 0 300px;
+}
+
+#details2 {
+   margin: 0 100px 0 100px;
+}
+
+#details3 {
+   float:right;
+}
+
+#content {
+    background: white;padding:20px;clear:both;margin: 0 auto;
+}
+
+.cssgridview {
+    background-color: coral;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+    text-align:center;
+    font-variant:small-caps;
+}
+
+.cssgridview td {
+    padding: 10px;
+    border: solid 1px #c1c1c1;
+    color: white;
+}
+
+.cssgridview td a{
+    color: silver;
+}
+
+.cssgridview th {
+    padding: 4px 2px;
+    color: silver;
+    background: yellow;
+    border-left:solid 1px #525252;
+}
+
+.cssgridview th a {
+    color: silver;
+    text-decoration: none;
+}
+
+.cssgridview th a:hover {
+    color: silver;
+    text-decoration: underline;
+}
+
+.cssgridview .alt {
+    background: coral;
+}
+
+.cssgridview .pgr {
+    background: yellow;
+}
+
+.cssgridview .pgr table {
+    margin: 5px 0;
+}
+
+.cssgridview .pgr td {
+    border-width: 0;
+    padding: 0 6px;
+    border-left: solid 1px #666;
+    font-weight: bold;
+    color: silver;
+}
+
+.cssgridview .pgr a {
+    color: silver;
+    text-decoration: none;
+}
+
+.cssgridview .pgr a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.cssdetailsview {background:gray; margin:5px 0 5px 0;}
+.cssdetailsview td {padding:5px ;border:solid 1px #c1c1c1;}
+.cssdetailsview .header td {padding:4px 2px; color:white; background-color:silver; text-align:center;}
+.cssdetailsview .fieldheader {color:red; width:150px;}
+.cssdetailsview .altrow {background:#fcfcfc}
+.cssdetailsview .command  {background: white; }
+.cssdetailsview .command td {text-align:center; background:white}
+.cssdetailsview .command a {color:black; text-decoration:none;}
+.cssdetailsview .command a:hover {color:blue; text-decoration:none;}
+
+#footer {
+    background: white;text-align:center;
+}

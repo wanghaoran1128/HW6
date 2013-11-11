@@ -11,6 +11,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
+    <div id="container">
+    <div id="content">
+    <div id="details3">
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    </div> 
+    <br />
     <div id="nav">
 
         <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" Orientation="Horizontal" RenderingMode="Table" StaticSubMenuIndent="10px">
@@ -24,12 +30,17 @@
         <StaticSelectedStyle CssClass="StaticSelectedStyle" />
         </asp:Menu>
         <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
-
+    </div>        
     </div>
+    <br />
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
         </asp:ContentPlaceHolder>
+    <br /><br /><br />
+    <div id="footer">
+                Copyright &copy; <asp:Label ID="lblcopy" runat="server" Text=""></asp:Label> 2013. 6K183 Software Design &amp; Development
+    </div><br /><br />
+    </div>
     </div>
     </form>
 </body>
